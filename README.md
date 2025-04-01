@@ -1,4 +1,4 @@
-# Todo API - Express.js
+# Todo API - Express.js.
 
 A simple RESTful API built with **Node.js** and **Express.js** to manage a to-do list. It allows you to **create**, **read**, **update**, and **delete** to-do items.
 
