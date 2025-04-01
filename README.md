@@ -1,4 +1,4 @@
-echo "# Todo API - Express.js
+# Todo API - Express.js
 
 A simple RESTful API built with **Node.js** and **Express.js** to manage a to-do list. It allows you to **create**, **read**, **update**, and **delete** to-do items.
 
@@ -106,4 +106,4 @@ Contributions are welcome! If you would like to improve this project, follow the
 3. Make your changes.
 4. Commit the changes (`git commit -m 'Add some feature'`).
 5. Push to the branch (`git push origin feature-branch`).
-6. Create a pull request." > README.md
+6. Create a pull request.
