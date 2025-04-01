@@ -1,97 +1,109 @@
-## Todo API - Express.js
+echo "# Todo API - Express.js
 
-This is a simple RESTful API built with **Node.js** and **Express.js** to manage a to-do list. It allows you to **create**, **read**, **update**, and **delete** to-do items. The application provides a basic backend service for managing to-do tasks using HTTP methods.
+A simple RESTful API built with **Node.js** and **Express.js** to manage a to-do list. It allows you to **create**, **read**, **update**, and **delete** to-do items.
+
+## Table of Contents
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
 
 ## Features
-- **GET /api/todos** - Retrieve all to-do items.
-- **GET /api/todos/:id** - Retrieve a single to-do item by ID.
-- **POST /api/todos** - Create a new to-do item.
-- **PUT /api/todos/:id** - Update an existing to-do item by ID.
-- **DELETE /api/todos/:id** - Delete a to-do item by ID.
+
+- Allows creating a to-do item with a task and completion status.
+- Retrieve all to-do items or a specific to-do item by ID.
+- Update a to-do item's task or completion status.
+- Delete a to-do item by ID.
+  
+## Technologies Used
+
+- **Node.js** - JavaScript runtime to build the server.
+- **Express.js** - Web framework for handling HTTP requests and routes.
+- **JavaScript** - Used for creating server-side logic.
 
 ## Installation
 
-1. **Clone the repository:**
+1. **Clone the repository**:
 
-   \`\`\`bash
-   git clone https://github.com/yourusername/todo-api-express.git
-   \`\`\`
+    \`\`\`bash
+    git clone https://github.com/yourusername/todo-api-express.git
+    \`\`\`
 
-2. **Navigate to the project directory:**
+2. **Navigate into the project directory**:
 
-   \`\`\`bash
-   cd todo-api-express
-   \`\`\`
+    \`\`\`bash
+    cd todo-api-express
+    \`\`\`
 
-3. **Install dependencies:**
+3. **Install dependencies**:
 
-   Make sure you have Node.js installed. Then, run:
+    Make sure you have Node.js installed. Then, run:
 
-   \`\`\`bash
-   npm install
-   \`\`\`
+    \`\`\`bash
+    npm install
+    \`\`\`
 
-4. **Start the server:**
+4. **Start the server**:
 
-   Run the following command to start the server:
+    Run the following command to start the server:
 
-   \`\`\`bash
-   node server.js
-   \`\`\`
+    \`\`\`bash
+    node server.js
+    \`\`\`
 
-   The server will start on **http://localhost:3000** by default.
+    The server will start on **http://localhost:3000**.
 
 ## Usage
 
-Once the server is running, you can interact with the API using any HTTP client (like a browser, Postman, or cURL).
+1. **Get all todos:**
 
-### Get all todos:
-\`\`\`bash
-GET http://localhost:3000/api/todos
-\`\`\`
+    \`\`\`bash
+    GET http://localhost:3000/api/todos
+    \`\`\`
 
-### Get a single todo by ID:
-\`\`\`bash
-GET http://localhost:3000/api/todos/:id
-\`\`\`
+2. **Get a single todo by ID:**
 
-### Create a new todo:
-\`\`\`bash
-POST http://localhost:3000/api/todos
-Content-Type: application/json
-{
-  \"task\": \"Learn Express\",
-  \"completed\": false
-}
-\`\`\`
+    \`\`\`bash
+    GET http://localhost:3000/api/todos/:id
+    \`\`\`
 
-### Update a todo by ID:
-\`\`\`bash
-PUT http://localhost:3000/api/todos/:id
-Content-Type: application/json
-{
-  \"task\": \"Learn Express.js and build a backend\",
-  \"completed\": true
-}
-\`\`\`
+3. **Create a new todo:**
 
-### Delete a todo by ID:
-\`\`\`bash
-DELETE http://localhost:3000/api/todos/:id
-\`\`\`
+    \`\`\`bash
+    POST http://localhost:3000/api/todos
+    Content-Type: application/json
+    {
+        \"task\": \"Learn Express\",
+        \"completed\": false
+    }
+    \`\`\`
 
-## Technologies Used
-- **Node.js** - JavaScript runtime for building the server.
-- **Express.js** - Web framework for building the API routes.
-- **JavaScript** - Language used for building the server and API logic.
+4. **Update a todo by ID:**
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+    \`\`\`bash
+    PUT http://localhost:3000/api/todos/:id
+    Content-Type: application/json
+    {
+        \"task\": \"Learn Express.js and build a backend\",
+        \"completed\": true
+    }
+    \`\`\`
+
+5. **Delete a todo by ID:**
+
+    \`\`\`bash
+    DELETE http://localhost:3000/api/todos/:id
+    \`\`\`
 
 ## Contributing
-Feel free to fork this repository, make changes, and create a pull request if you'd like to contribute improvements or fixes.
 
-## Contact
-- **Author**: Rabuma Abraham Bekele
-- **Email**: your.email@example.com
-- **GitHub**: [your-username](https://github.com/yourusername)"
+Contributions are welcome! If you would like to improve this project, follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit the changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Create a pull request." > README.md
