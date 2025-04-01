@@ -28,7 +28,7 @@ A simple RESTful API built with **Node.js** and **Express.js** to manage a to-do
 1. **Clone the repository**:
 
     \`\`\`bash
-    git clone https://github.com/yourusername/todo-api-express.git
+    git clone https://github.com/rabumaabraham/todo-api-express.git
     \`\`\`
 
 2. **Navigate into the project directory**:
