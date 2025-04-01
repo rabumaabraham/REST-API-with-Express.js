@@ -27,31 +27,31 @@ A simple RESTful API built with **Node.js** and **Express.js** to manage a to-do
 
 1. **Clone the repository**:
 
-    \`\`\`bash
+    ```bash
     git clone https://github.com/rabumaabraham/todo-api-express.git
-    \`\`\`
+    ```
 
 2. **Navigate into the project directory**:
 
-    \`\`\`bash
+    ```bash
     cd todo-api-express
-    \`\`\`
+    ```
 
 3. **Install dependencies**:
 
     Make sure you have Node.js installed. Then, run:
 
-    \`\`\`bash
+    ```bash
     npm install
-    \`\`\`
+    ```
 
 4. **Start the server**:
 
     Run the following command to start the server:
 
-    \`\`\`bash
+    ```bash
     node server.js
-    \`\`\`
+    ```
 
     The server will start on **http://localhost:3000**.
 
@@ -59,43 +59,43 @@ A simple RESTful API built with **Node.js** and **Express.js** to manage a to-do
 
 1. **Get all todos:**
 
-    \`\`\`bash
+    ```bash
     GET http://localhost:3000/api/todos
-    \`\`\`
+    ```
 
 2. **Get a single todo by ID:**
 
-    \`\`\`bash
+    ```bash
     GET http://localhost:3000/api/todos/:id
-    \`\`\`
+    ```
 
 3. **Create a new todo:**
 
-    \`\`\`bash
+    ```bash
     POST http://localhost:3000/api/todos
     Content-Type: application/json
     {
         \"task\": \"Learn Express\",
         \"completed\": false
     }
-    \`\`\`
+    ```
 
 4. **Update a todo by ID:**
 
-    \`\`\`bash
+    ```bash
     PUT http://localhost:3000/api/todos/:id
     Content-Type: application/json
     {
         \"task\": \"Learn Express.js and build a backend\",
         \"completed\": true
     }
-    \`\`\`
+    ```
 
 5. **Delete a todo by ID:**
 
-    \`\`\`bash
+    ```bash
     DELETE http://localhost:3000/api/todos/:id
-    \`\`\`
+    ```
 
 ## Contributing
 
